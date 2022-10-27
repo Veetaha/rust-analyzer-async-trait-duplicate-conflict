@@ -4,7 +4,8 @@ use duplicate::duplicate_item;
 #[async_trait]
 pub trait Foo {
     #[duplicate_item(
-        var; [foo];
+        var;
+        [foo];
     )]
     async fn foo(&self);
 }
